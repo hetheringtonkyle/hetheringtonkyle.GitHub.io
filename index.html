@@ -1,9 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<body>
-  <h1>Kyle Hetherington</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kyle Hetherington Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 
+  </head>
+    
+  <body>
+    <header>
+      <nav>
+        <div id="navbar">
+          <div id="logo" class="reverse">
+            <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">&#9776;</div>
+            
+  
+          </div>
+          <div id="links">
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Case Studies</a>
+            <a href="">References</a>
+            <a href="">Certifications</a>
+            <a href="">Get In Touch</a>
+          </div>
+        </div>
+  
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mySidenav" class="sidenav">
+        <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Blog</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    
+  <canvas></canvas>
+  <div id="sub-head">Optimizing digital ecosystems through data, architecture, and automation.</div>
+    
+  <div id="cards" class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h2>Who I Am</h2>
+          <p>Get to know what where I came from<br>and where I'm going.</p>
+          <button>Find Out &rarr;</button>
+        </div>
+      </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>Work That Delivers</h2>
+      <p>Case studies showcasing efficiency,<br>insights, and smart execution.</p>
+      <button>Dive In &rarr;</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>See What Others Say</h2>
+      <p>Read real testimonials from<br>those I have worked with.</p>
+      <button>What's the Fuss? &rarr;</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>Credentials That Count</h2>
+      <p>See what platforms I <br>excel in.</p>
+      <button>View Credentials &rarr;</button>
+    </div>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
 </html>
