@@ -6,7 +6,7 @@
 
 text = 'KYLE HETHERINGTON';  // The message displayed
 chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';  // All possible Charactrers
-scale = 70;  // Font size and overall scale
+scale = 63;  // Font size and overall scale
 breaks = 0.009;  // Speed loss per frame
 endSpeed = 0.005;  // Speed at which the letter stopps
 firstLetter = 200;  // Number of frames untill the first letter stopps (60 frames per second)
@@ -16,7 +16,7 @@ function setScaleForViewport() {
   if (window.matchMedia("(max-width: 768px)").matches) {
     scale = 22;   // smaller on mobile (adjust as you like)
   } else {
-    scale = 70;   // default for desktop
+    scale = 63;   // default for desktop
   }
 }
 
