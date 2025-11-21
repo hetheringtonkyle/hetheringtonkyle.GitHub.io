@@ -6,16 +6,25 @@
 
 text = 'KYLE HETHERINGTON';  // The message displayed
 chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';  // All possible Charactrers
-scale = 52;  // Font size and overall scale
+scale = 70;  // Font size and overall scale
 breaks = 0.009;  // Speed loss per frame
 endSpeed = 0.005;  // Speed at which the letter stopps
 firstLetter = 200;  // Number of frames untill the first letter stopps (60 frames per second)
 delay = 5;  // Number of frames between letters stopping
 
+function setScaleForViewport() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    scale = 22;   // smaller on mobile (adjust as you like)
+  } else {
+    scale = 70;   // default for desktop
+  }
+}
 
 let animationDone = false;
 canvas = document.querySelector('canvas');
 ctx = canvas.getContext('2d');
+
+setScaleForViewport();
 
 text = text.split('');
 chars = chars.split('');
@@ -137,3 +146,10 @@ requestAnimationFrame(loop = function () {
   requestAnimationFrame(loop);
 });
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

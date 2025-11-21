@@ -1,7 +1,10 @@
 
 
-
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html, body{
   background: #020617;
@@ -15,12 +18,12 @@ canvas{
   background: transparent; /* Background Color of slot */
   height: 100%;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 8%;
   z-index: 1;
 }
 
 #sub-head{
-  font-size: 28px;
+  font-size: 32px;
   padding-top: 3%;
   padding-bottom: 1%;
   text-align: center;
@@ -76,7 +79,7 @@ canvas{
   justify-content: left;
   align-content: center;
   grid-auto-flow: column;
-  grid-gap: 1.5em;
+  grid-gap: 2.5em;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -87,6 +90,7 @@ canvas{
   color: #020617;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /* Color change */
@@ -122,10 +126,10 @@ canvas{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2000;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -135,13 +139,13 @@ canvas{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #020617;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #fff;
+  color: #6D98E3;
 }
 
 .sidenav .closebtn {
@@ -161,9 +165,8 @@ a {
   flex-direction: row;
   justify-content: center;   /* centers cards horizontally */
   align-items: center;       /* centers cards vertically (optional) */
-  flex-wrap: wrap;           /* allows them to wrap on smaller screens */
   gap: 3rem;
-  margin-top: 4%;
+  margin: 4%;
 }
 
 .card {
@@ -174,8 +177,7 @@ a {
   overflow: hidden;
   border-radius: 1rem;
   color: #fff;
-  display:inline-block;
-  width: 350px;;
+  width: 33%;
 }
 
 .card::before {
@@ -266,5 +268,12 @@ button {
   .card-container{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
-}
+  .card{
+    width: 90%;
+  }
+  #sub-head{
+    font-size: 22px;
+  } 
+  }
