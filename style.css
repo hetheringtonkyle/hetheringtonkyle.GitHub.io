@@ -12,6 +12,39 @@ background-repeat: no-repeat;
   background-attachment: fixed;   /* optional, for a nice “stuck” background effect */
   background-size: cover;
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3% auto;
+  text-align: center;
+}
+
+.section-header{
+  width: 80%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 11% auto 0% auto;
+}
+
+.section-header h3{
+  font-size: 4rem;
+  color:#6D98E3;
+  font-weight: 600;
+
+}
+
+.section-header p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #020617;
+  background: #fff;
+  padding: 2rem 3rem;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
 }
 
 .grid-container {
@@ -298,6 +331,186 @@ button {
   cursor: pointer;
 }
 
+.sticky-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 24px;
+  margin: 30px auto;
+  height: 4040px;
+  align-items: center;
+  background: #fff;
+  padding: 90px;
+}
+
+.sticky-container h3{
+  font-size: 4rem;
+  color:#6D98E3;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sticky-card {
+  width: 100%;
+  margin: 0 20px;
+  box-sizing: border-box;
+  background: #020617;
+  min-height: 400px;
+  border-radius: 32px;
+  position: sticky;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; 
+}
+
+.sticky-card h4 {
+  font-family : 'system-ui', sans-serif;
+  font-size: 3rem;
+  font-weight: medium;
+  color: #fff;
+}
+
+.sticky-card td {
+  font-family : 'system-ui', sans-serif;
+  font-size: 1.25rem;
+  font-weight: medium;
+  color: #fff;
+}
+
+.one {
+  top: 50px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+.two {
+  top: 80px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+.three {
+  top: 110px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.four {
+  top: 140px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.five {
+  top: 170px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.six {
+  top: 200px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.seven {
+  top: 230px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.eight {
+  top: 260px;
+  background: #6D98E3;
+  border: 3px solid #020617;
+}
+
+.contact-header{
+  background: #fff;
+  padding: 20px 0px;
+  text-align: center;
+}
+.contact-header h3{
+  font-size: 4rem;
+  color:#6D98E3;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 3rem;
+  background: #020617;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 2px solid #ffffff;
+}
+
+#form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#form-wrapper input,
+#form-wrapper textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020617;
+  background: #f7f7f7;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+#form-wrapper input::placeholder,
+#form-wrapper textarea::placeholder {
+  color: #64748b;
+  letter-spacing: 0.03em;
+}
+
+#form-wrapper input:focus,
+#form-wrapper textarea:focus {
+  background: #ffffff;
+  border-color: #6D98E3;
+  box-shadow: 0 0 0 3px rgba(109,152,227,0.3);
+  outline: none;
+}
+
+#form-wrapper textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+#form-wrapper button {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #6D98E3, #020617);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#form-wrapper button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(32, 6, 23, 0.3);
+}
+
+#form-wrapper button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
 /* Mobile to Tablet  */
 @media (min-width: 320px) and (max-width: 767px) {
   #links,
@@ -366,5 +579,62 @@ button {
   /* Remove right borders for column 2 */
   .grid-item:nth-child(2n) {
     border-right-color: transparent;
+  }
+  .section-header h3{
+  font-size: 2.5rem;
+
+}
+
+.section-header p{
+  font-size: 1rem;
+}
+
+/* Container: full width, small padding, still tall enough for sticky stack */
+  .sticky-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 24px 12px;   /* reduce padding to avoid overflow */
+    margin: 16px auto;
+    height: 3200px;       /* keep a tall scroll area for sticky */
+    gap: 16px;
+  }
+
+  /* Cards: stay sticky, but fit viewport */
+  .sticky-card {
+    width: 100%;
+    margin: 0;            /* remove 0 20px */
+    padding: 20px 16px;   /* add internal padding so content stays on card */
+    min-height: 320px;    /* slightly smaller for mobile */
+    position: sticky;     /* keep sticky */
+    display: flex;
+    align-items: flex-start; /* don't center; helps text stay inside */
+  }
+
+  /* Reduce top offsets so cards don't smush */
+  .one   { top: 16px; }
+  .two   { top: 48px; }
+  .three { top: 80px; }
+  .four  { top: 112px; }
+  .five  { top: 144px; }
+  .six  { top: 176px; }
+  .seven  { top: 208px; }
+  .eight  { top: 240px; }
+
+  /* Typography scaling + containment */
+  .sticky-card h4 {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 12px 0;
+  }
+
+  .sticky-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .sticky-card td {
+    font-size: 1rem;
+    word-break: break-word;  /* prevents long text from pushing width */
   }
   }

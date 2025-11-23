@@ -139,7 +139,7 @@ requestAnimationFrame(loop = function () {
     if (secondEl) {
       setTimeout(() => {
         secondEl.classList.add('active'); // activate 1s later
-      }, 1000); // 1000ms = 1 second
+      }, 500); // 500ms = 0.5 seconds
     }
   }
 
