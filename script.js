@@ -9,7 +9,7 @@ chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';  // All possible Charactrers
 scale = 61;  // Font size and overall scale
 breaks = 0.009;  // Speed loss per frame
 endSpeed = 0.005;  // Speed at which the letter stopps
-firstLetter = 200;  // Number of frames untill the first letter stopps (60 frames per second)
+firstLetter = 120;  // Number of frames untill the first letter stopps (60 frames per second)
 delay = 5;  // Number of frames between letters stopping
 
 function setScaleForViewport() {

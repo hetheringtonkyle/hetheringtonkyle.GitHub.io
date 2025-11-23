@@ -331,6 +331,7 @@ button {
   cursor: pointer;
 }
 
+
 .sticky-container {
   position: relative;
   display: flex;
@@ -349,6 +350,7 @@ button {
   color:#6D98E3;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .sticky-card {
@@ -365,63 +367,85 @@ button {
   justify-content: start; 
 }
 
+.sticky-card .subject{
+  width: 48%;
+}
+
 .sticky-card h4 {
   font-family : 'system-ui', sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: medium;
-  color: #fff;
+  color: #f97316;
+}
+
+.sticky-card a{
+  margin-bottom: 5%;
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: #f97316; 
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border: 1px solid #f97316;
+  border-radius: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.sticky-card a:hover{
+color: #fff;
+background: #f97316;
 }
 
 .sticky-card td {
   font-family : 'system-ui', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: medium;
-  color: #fff;
+  color: #020617;
 }
 
 .one {
   top: 50px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 .two {
   top: 80px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 .three {
   top: 110px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
 .four {
   top: 140px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
 .five {
   top: 170px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
 .six {
   top: 200px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
 .seven {
   top: 230px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
 .eight {
   top: 260px;
-  background: #6D98E3;
+  background: #fff;
   border: 3px solid #020617;
 }
 
@@ -599,6 +623,10 @@ button {
     gap: 16px;
   }
 
+  .sticky-container h3{
+    font-size: 2.5rem;
+  }
+
   /* Cards: stay sticky, but fit viewport */
   .sticky-card {
     width: 100%;
@@ -608,6 +636,10 @@ button {
     position: sticky;     /* keep sticky */
     display: flex;
     align-items: flex-start; /* don't center; helps text stay inside */
+  }
+  .sticky-card a{
+    font-size: 1.3rem;
+    margin-top: 1rem;
   }
 
   /* Reduce top offsets so cards don't smush */
@@ -622,10 +654,11 @@ button {
 
   /* Typography scaling + containment */
   .sticky-card h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     width: 100%;
     text-align: left;
     margin: 0 0 12px 0;
+    display: flex;
   }
 
   .sticky-card table {
@@ -636,5 +669,6 @@ button {
   .sticky-card td {
     font-size: 1rem;
     word-break: break-word;  /* prevents long text from pushing width */
+    display: flex;
   }
   }
