@@ -9,7 +9,7 @@ function closeNav() {
 document.addEventListener("DOMContentLoaded", () => {
   let count = 0;
 
-  const WORDS = ["Delivers", "Matters", "Scales", "Performs"]; // your rotation words
+  const WORDS = ["Delivers", "Matters", "Scales", "Excites"]; // your rotation words
   const SWAPPER = document.querySelector(".hero-title .swap");
 
   if (!SWAPPER) {
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const SWAP = () => {
     // ✅ If user is hovering ANY flip card, skip swapping this tick
     if (document.querySelector(".flip:hover")) return;
+    if (document.getElementById('mySidenav').style.width === '250px') return;
 
     const nextWord = WORDS[(count += 1) % WORDS.length];
 
